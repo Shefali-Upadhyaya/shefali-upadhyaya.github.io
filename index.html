@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo" onclick="location.href='#'">SU</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo" onclick="location.href='#'">SU</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <a href="#about" onclick="toggleMenu()">About</a>
+                <a href="#experience" onclick="toggleMenu()">Experience</a>
+                <a href="#projects" onclick="toggleMenu()">Projects</a>
+                <a href="#contact" onclick="toggleMenu()">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="My Profile Picture"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title-main">Shefali Upadhyaya</h1>
+            <p class="section__text__p2">Software Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/shefali_upadhyaya_resume.pdf')">
+                    Resume
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="social-container">
+                <a href="https://github.com/Shefali-Upadhyaya">
+                    <img src="./assets/github.png"
+                         alt="My GitHub Profile"
+                         class="icon"
+                    />
+                </a>
+                <a href="https://salesforce.com/trailblazer/shefaliupadhyaya">
+                    <img src="./assets/ranger.png"
+                        alt="My Salesforce Trailhead Profile"
+                        class="icon"
+                    />
+                </a>
+                <a href="https://scholar.google.co.in/citations?user=XPTvKa8AAAAJ">
+                    <img src="./assets/google-scholar.png"
+                         alt="My Google Scholar Profile"
+                         class="icon"
+                    />
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png"
+                     alt="My Profile Picture"
+                    class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="assets/experience.png"
+                             alt="Experience icon"
+                             class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p>3+ years <br />Software Development & Testing</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png"
+                             alt="Education icon"
+                             class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>M.Eng. - Software Engineering (2022-2024)<br />B.Tech. - Computer Science (2014-2018)</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I am a recent graduate with a Master's in Software Engineering from Concordia University.
+                        I have 3+ years of experience in designing, developing, and maintaining software solutions in agile environments.
+                        I am 2x Salesforce Certified and 1x Trailhead Ranger.
+                        I am passionate about Software Development, Salesforce, Big Data, Test Automation, knowledge sharing and collaboration.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img
+                src="./assets/arrow.png"
+                alt="Arrow icon"
+                class="icon arrow"
+                onclick="location.href='./#experience'"
+        />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <img src="assets/experience.png" alt="Timeline Icon" class="timeline-icon">
+                            <div class="timeline-content">
+                                <span class="timeline-date">Sep 2023 - Dec 2023</span>
+                                <h3>Teaching Assistant - Concordia University, Montreal, Canada</h3>
+                                <p>Led Programming & Problem-Solving lab sessions in Java, guiding 15+ students on concepts and techniques.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <img src="assets/experience.png" alt="Timeline Icon" class="timeline-icon">
+                            <div class="timeline-content">
+                                <span class="timeline-date">May 2023 - Aug 2023</span>
+                                <h3>Developer Co-Op - CGI, Toronto, Canada</h3>
+                                <p>Developed APIs and automated CI/CD pipelines in Jenkins, reducing code errors by 15% and optimizing development processes through cross-functional collaboration.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <img src="assets/experience.png" alt="Timeline Icon" class="timeline-icon">
+                            <div class="timeline-content">
+                                <span class="timeline-date">June 2018 - Dec 2021</span>
+                                <h3>Software Engineer II - Qualitest (QA InfoTech), Noida, India</h3>
+                                <p>Delivered on 4 client-focused projects, enhancing business efficiency by 25% through technical solutions and automation, optimized CI/CD pipelines and Salesforce frameworks, reduced regression test time by 36%, improved team productivity by 20%, and mentored junior members in an agile environment.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <img src="assets/experience.png" alt="Timeline Icon" class="timeline-icon">
+                            <div class="timeline-content">
+                                <span class="timeline-date">Jun 2017 - Aug 2017</span>
+                                <h3>Android App Developer - Prayaas Corps, Delhi, India</h3>
+                                <p>Developed an Android app using Java and Android SDK, increasing awareness of Prayaas Corps’ educational initiatives and reaching over 10,000 users in underprivileged communities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png"
+             alt="Arrow icon"
+             class="icon arrow"
+             onclick="location.href='./#projects'"
+        />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="project-container">
+                        <img
+                            src="./assets/vehicle-insurance-claim-fraud-detection-project.png"
+                            alt="Vehicle Insurance Claim Fraud Detection Project Image"
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="project-title">Vehicle Insurance Claim Fraud Detection</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/Shefali-Upadhyaya/vehicle-insurance-claim-fraud-detection'">
+                            GitHub
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="project-container">
+                        <img
+                                src="assets/vibe-sound-project.png"
+                                alt="VibeSound Project Image"
+                                class="project-img"
+                        />
+                    </div>
+                    <h2 class="project-title">Vibe Sound: Mood Based Music Recommender</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/Shefali-Upadhyaya/vibe-sound'">
+                            GitHub
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="project-container">
+                        <img
+                                src="./assets/buy-advisor-project.png"
+                                alt="Buy Advisor Project Image"
+                                class="project-img"
+                        />
+                    </div>
+                    <h2 class="project-title">Buy Advisor: We Advise, You Buy!</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/Shefali-Upadhyaya/buy-advisor'">
+                            GitHub
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="project-container">
+                        <img
+                                src="assets/space-impact-game-project.png"
+                                alt="VibeSound Project Image"
+                                class="project-img"
+                        />
+                    </div>
+                    <h2 class="project-title">Space Impact Game Android App</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/Shefali-Upadhyaya/space-impact-game'">
+                            GitHub
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img
+                src="./assets/arrow.png"
+                alt="Arrow icon"
+                class="icon arrow"
+                onclick="location.href='./#contact'"
+        />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <a href="mailto:shefali14.upadhy@gmail.com">
+                    <img src="./assets/gmail.png"
+                        alt="Gmail icon"
+                        class="icon"
+                    />
+                </a>
+            </div>
+            <div class="contact-info-container">
+                <a href="https://linkedin.com/in/shefali-upadhyaya">
+                    <img src="./assets/linkedin.png"
+                        alt="LinkedIn icon"
+                        class="icon"
+                    />
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#" class="go-to-top">Go to Top &#8679;</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Shefali Upadhyaya. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
