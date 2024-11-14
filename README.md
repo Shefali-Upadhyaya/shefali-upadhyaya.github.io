@@ -1,10 +1,10 @@
 # My Portfolio Website
 
-Welcome to my portfolio website! This project serves as a central hub for my online presence as a software developer.
+Welcome to my portfolio website! This project serves as a central hub for my online presence as a software developer and can be accessed [here](https://shefali-upadhyaya.github.io/).
 
 ## Project Overview
 
-This portfolio website was created using fundamental web technologies:
+My portfolio website is created using fundamental web technologies:
 - **HTML** for structuring content
 - **CSS** for styling, layout and animations
 - **JavaScript** for interactivity
