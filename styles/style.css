@@ -426,8 +426,8 @@ section {
 }
 
 .project-btn {
-    color: black;
-    border-color: rgb(163, 163, 163);
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
 }
 
 .project-container {
