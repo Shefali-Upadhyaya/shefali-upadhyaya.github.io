@@ -15,6 +15,7 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -31,6 +32,7 @@
             <div class="menu-links">
                 <a href="#about" onclick="toggleMenu()">About</a>
                 <a href="#experience" onclick="toggleMenu()">Experience</a>
+                <a href="#certifications" onclick="toggleMenu()">Certifications</a>
                 <a href="#projects" onclick="toggleMenu()">Projects</a>
                 <a href="#contact" onclick="toggleMenu()">Contact</a>
             </div>
@@ -81,7 +83,7 @@
             <div class="section__pic-container">
                 <img src="./assets/about-pic.png"
                      alt="My Profile Picture"
-                    class="about-pic"
+                     class="about-pic"
                 />
             </div>
             <div class="about-details-container">
@@ -157,6 +159,47 @@
                                 <span class="timeline-date">Jun 2017 - Aug 2017</span>
                                 <h3>Android App Developer - Prayaas Corps, Delhi, India</h3>
                                 <p>Developed an Android app using Java and Android SDK, increasing awareness of Prayaas Corps’ educational initiatives and reaching over 10,000 users in underprivileged communities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png"
+             alt="Arrow icon"
+             class="icon arrow"
+             onclick="location.href='./#certifications'"
+        />
+    </section>
+    <section id="certifications">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Certifications</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <img src="assets/certification.png" alt="Certification Icon" class="timeline-icon">
+                            <div class="timeline-content">
+                                <span class="timeline-date">Issued: Sep 2023</span>
+                                <h3>Salesforce Certified Platform App Builder</h3>
+                                <p>Demonstrates my expertise in designing and building applications on the Salesforce platform using declarative tools.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <img src="assets/certification.png" alt="Certification Icon" class="timeline-icon">
+                            <div class="timeline-content">
+                                <span class="timeline-date">Issued: Dec 2020</span>
+                                <h3>Salesforce Certified Administrator</h3>
+                                <p>Validates my proficiency in managing and configuring Salesforce environments for optimal business solutions.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <img src="assets/certification.png" alt="Certification Icon" class="timeline-icon">
+                            <div class="timeline-content">
+                                <span class="timeline-date">Issued: Jan 2018</span>
+                                <h3>NASSCOM Certified Software Developer</h3>
+                                <p>Recognized for foundational knowledge and skills in software development and programming practices.</p>
                             </div>
                         </div>
                     </div>
@@ -252,7 +295,7 @@
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
-                <a href="mailto:shefali14.upadhy@gmail.com">
+                <a id="email-link">
                     <img src="./assets/gmail.png"
                         alt="Gmail icon"
                         class="icon"
@@ -268,6 +311,7 @@
                 </a>
             </div>
         </div>
+        <div id="toast" class="toast">Email copied to clipboard!</div>
     </section>
     <footer>
         <nav>
